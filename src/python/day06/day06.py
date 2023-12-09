@@ -78,7 +78,6 @@ def part_1(path):
 
 def part_2(path):
     t, d = get_input_2(path)
-    # return traverse_from_two_directions(t, d)
     return math_it_out(t, d)
 
 

@@ -96,7 +96,6 @@ def highest_possible_score(hand, score):
 def part_2(cards):
     ans = 0
     ranked = reversed(sorted(cards, key=cmp_to_key(lambda c1, c2: compare_hands(c1, c2,card2_values,2))))
-    # print(ranked)
     for i, c in enumerate(ranked):
         ans += (i + 1) * c[2]
     return ans
@@ -108,5 +107,4 @@ if __name__ == "__main__":
 
     print(part_1(cards))
     print(part_2(cards))
-    # print(cards)
 
